@@ -1,29 +1,37 @@
 ;From MDeiml/tree-sitter-markdown & Helix
 (setext_heading
-  (paragraph) @markup.heading.1
-  (setext_h1_underline) @markup.heading.1)
+  (paragraph
+    (inline) @markup.heading.1)
+    (setext_h1_underline) @punctuation.delimiter)
 
 (setext_heading
-  (paragraph) @markup.heading.2
-  (setext_h2_underline) @markup.heading.2)
+  (paragraph
+    (inline) @markup.heading.2)
+    (setext_h2_underline) @punctuation.delimiter)
 
 (atx_heading
-  (atx_h1_marker)) @markup.heading.1
+  (atx_h1_marker) @punctuation.delimiter
+  (inline) @markup.heading.1)
 
 (atx_heading
-  (atx_h2_marker)) @markup.heading.2
+  (atx_h2_marker) @punctuation.delimiter
+  (inline) @markup.heading.2)
 
 (atx_heading
-  (atx_h3_marker)) @markup.heading.3
+  (atx_h3_marker) @punctuation.delimiter
+  (inline) @markup.heading.3)
 
 (atx_heading
-  (atx_h4_marker)) @markup.heading.4
+  (atx_h4_marker) @punctuation.delimiter
+  (inline) @markup.heading.4)
 
 (atx_heading
-  (atx_h5_marker)) @markup.heading.5
+  (atx_h5_marker) @punctuation.delimiter
+  (inline) @markup.heading.5)
 
 (atx_heading
-  (atx_h6_marker)) @markup.heading.6
+  (atx_h6_marker) @punctuation.delimiter
+  (inline) @markup.heading.6)
 
 (info_string) @label
 

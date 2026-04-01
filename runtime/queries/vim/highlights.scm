@@ -35,8 +35,14 @@
 ] @keyword.function
 
 ; Function related
+; (function_declaration
+;   name: (_) @function)
 (function_declaration
-  name: (_) @function)
+   name: [
+    (identifier) @function
+    (scoped_identifier
+      (identifier) @function)
+  ])
 
 (call_expression
   function: (identifier) @function.call)
@@ -63,11 +69,15 @@
   (option_name)
 ] @variable.builtin
 
-[
-  (scope)
-  "a:"
-  "$"
-] @module
+; Override vim scope prefixes to be separate from @module
+; [
+;   (scope)
+;   "a:"
+;   "$"
+; ] @module
+(scope) @variable.scope
+"a:" @variable.scope
+"$" @variable.builtin
 
 ; Commands and user defined commands
 [
@@ -110,7 +120,7 @@
   "cnext"
   "cprevious"
   "cNext"
-  "tab"
+  ; "tab"
   "vertical"
   "leftabove"
   "aboveleft"
@@ -128,7 +138,7 @@
   "eval"
   "sign"
   "abort"
-  "substitute"
+  ; "substitute"
 ] @keyword
 
 (map_statement
@@ -254,8 +264,8 @@
 (heredoc
   (parameter) @keyword)
 
-(script
-  (parameter) @keyword)
+; (script
+  ; (parameter) @keyword)
 
 [
   (marker_definition)
@@ -318,8 +328,8 @@
 (binary_operation
   "." @operator)
 
-(lua_statement
-  "=" @keyword)
+; (lua_statement
+;   "=" @keyword)
 
 ; Punctuation
 [

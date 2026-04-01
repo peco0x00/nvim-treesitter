@@ -3,8 +3,14 @@
   (function_definition)
 ] @local.scope
 
+; (function_declaration
+;   name: (identifier) @local.definition.function)
 (function_declaration
-  name: (identifier) @local.definition.function)
+   name: [
+    (identifier)
+    (scoped_identifier
+      (identifier))
+  ] @local.definition.function)
 
 (function_declaration
   parameters: (parameters

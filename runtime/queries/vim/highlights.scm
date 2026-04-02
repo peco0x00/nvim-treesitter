@@ -214,7 +214,7 @@
   ] @keyword)
 
 ; Command command
-(command) @string
+; (command) @string
 
 (command_attribute
   name: _ @property

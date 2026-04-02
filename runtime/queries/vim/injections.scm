@@ -16,6 +16,10 @@
   (chunk) @injection.content
   (#set! injection.language "ruby"))
 
+(command_statement
+    (command) @injection.content
+    (#set! injection.language "python"))
+
 (python_statement
   (script
     (body) @injection.content

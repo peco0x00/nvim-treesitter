@@ -148,7 +148,7 @@
   (#any-of? @function.macro
     "do*" "step" "handler-bind" "decf" "prog1" "destructuring-bind" "defconstant" "do" "lambda"
     "with-standard-io-syntax" "case" "restart-bind" "ignore-errors" "with-slots" "prog2" "defclass"
-    "define-condition" "print-unreadable-object" "defvar" "when" "with-open-file" "prog" "incf"
+    "define-condition" "print-unreadable-object" "defvar" "defgroup" "defcustom" "when" "with-open-file" "prog" "incf"
     "declaim" "and" "loop-finish" "multiple-value-bind" "pop" "psetf" "defmacro" "with-open-stream"
     "define-modify-macro" "defsetf" "formatter" "call-method" "handler-case" "pushnew" "or"
     "with-hash-table-iterator" "ecase" "cond" "defun" "remf" "ccase" "define-compiler-macro"
@@ -210,7 +210,7 @@
     "logical-pathname-translations" "equal" "float-sign" "shadow" "sleep" "numerator" "prog2" "getf"
     "ldb-test" "round" "locally" "echo-stream-output-stream" "log" "get-macro-character"
     "alphanumericp" "find-method" "nintersection" "defclass" "define-condition"
-    "print-unreadable-object" "defvar" "broadcast-stream-streams" "floatp" "subst-if-not" "integerp"
+    "print-unreadable-object" "defvar" "defgroup" "defcustom" "broadcast-stream-streams" "floatp" "subst-if-not" "integerp"
     "translate-logical-pathname" "subsetp" "when" "write-string" "with-open-file" "clrhash"
     "apropos" "intern" "min" "string-greaterp" "import" "nset-difference" "prog" "incf"
     "both-case-p" "multiple-value-prog1" "characterp" "streamp" "digit-char-p" "random"

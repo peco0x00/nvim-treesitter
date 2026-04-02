@@ -49,6 +49,20 @@
   (sym_lit) @local.definition.function
   (#eq? @_deftest "deftest")) @local.scope
 
+(list_lit
+  .
+  (sym_lit) @_defcustom
+  .
+  (sym_lit) @local.definition.var
+  (#eq? @_defcustom "defcustom")) @local.scope
+
+(list_lit
+  .
+  (sym_lit) @_defgroup
+  .
+  (sym_lit) @local.definition.var
+  (#eq? @_defgroup "defgroup")) @local.scope
+
 (for_clause
   .
   (sym_lit) @local.definition.var)

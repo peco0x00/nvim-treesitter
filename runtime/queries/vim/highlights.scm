@@ -138,6 +138,7 @@
   "eval"
   "sign"
   "abort"
+  "range"
   ; "substitute"
 ] @keyword
 

@@ -189,7 +189,7 @@
     "replace" "tanh" "maphash" "code-char" "decf" "array-displacement" "string-not-lessp"
     "slot-value" "remove-if" "cell-error-name" "vectorp" "cdddar" "two-way-stream-output-stream"
     "parse-integer" "get-internal-real-time" "fourth" "make-string" "slot-missing" "byte-size"
-    "string-trim" "nstring-downcase" "cdaddr" "<" "labels" "interactive-stream-p" "fifth" "max"
+    "string-trim" "nstring-downcase" "cdaddr" "<" "labels" "interactive" "interactive-stream-p" "fifth" "max"
     "logxor" "pathname-name" "function" "realp" "eql" "logand" "short-site-name" "prog1"
     "user-homedir-pathname" "list-all-packages" "exp" "cadar" "read-char-no-hang"
     "package-error-package" "stream-external-format" "bit-andc2" "nsubstitute-if" "mapcar"

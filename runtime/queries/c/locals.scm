@@ -2,6 +2,9 @@
 (function_declarator
   declarator: (identifier) @local.definition.function)
 
+(preproc_include
+    path: (system_lib_string) @local.definition.include) @local.scope
+
 (preproc_function_def
   name: (identifier) @local.definition.macro) @local.scope
 

@@ -51,8 +51,11 @@
 (method_declaration) @local.scope
 
 ; DEFINITIONS
+; (package_declaration
+;   (identifier) @local.definition.namespace)
+
 (package_declaration
-  (identifier) @local.definition.namespace)
+  (scoped_identifier) @local.definition.namespace)
 
 (class_declaration
   name: (identifier) @local.definition.type)
@@ -86,9 +89,12 @@
 (lambda_expression
   parameters: (identifier) @local.definition.parameter) ; x -> ...
 
-((scoped_identifier
-  (identifier) @local.definition.import)
-  (#has-ancestor? @local.definition.import import_declaration))
+; ((scoped_identifier
+;   (identifier) @local.definition.import)
+;   (#has-ancestor? @local.definition.import import_declaration))
+
+(import_declaration
+  (scoped_identifier) @local.definition.import)
 
 (field_declaration
   declarator: (variable_declarator

@@ -45,6 +45,10 @@
 (package_clause
   (package_identifier) @local.definition.namespace)
 
+(import_spec
+  path: (interpreted_string_literal
+  (interpreted_string_literal_content) @local.definition.import))
+
 (import_spec_list
   (import_spec
     name: (package_identifier) @local.definition.namespace))

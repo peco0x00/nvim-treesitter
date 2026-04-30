@@ -31,7 +31,7 @@
 (mod_item
   name: (identifier) @module)
 
-(self) @variable.builtin
+((self) @variable.builtin (#set! priority 101))
 
 "_" @character.special
 

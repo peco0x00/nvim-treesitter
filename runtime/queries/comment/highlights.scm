@@ -15,10 +15,10 @@
     (user) @constant
     ")" @punctuation.bracket)?
   ":" @punctuation.delimiter)
-  (#any-of? @comment.note "NOTE" "XXX" "INFO" "DOCS" "PERF" "TEST"))
+  (#any-of? @comment.note "NOTE" "XXX" "INFO" "DOCS" "PERF" "TEST" "MARK"))
 
 ("text" @comment.note @nospell
-  (#any-of? @comment.note "NOTE" "XXX" "INFO" "DOCS" "PERF" "TEST"))
+  (#any-of? @comment.note "NOTE" "XXX" "INFO" "DOCS" "PERF" "TEST" "MARK"))
 
 ((tag
   (name) @comment.warning @nospell

@@ -159,7 +159,7 @@
     "with-compilation-unit" "defgeneric" "with-output-to-string" "untrace" "defparameter"
     "ctypecase" "do-external-symbols" "etypecase" "do-all-symbols" "with-package-iterator" "unless"
     "defmethod" "in-package" "defpackage" "return" "typecase" "shiftf" "setf" "pprint-logical-block"
-    "time" "restart-case" "prog*" "define-method-combination" "optimize"))
+    "time" "restart-case" "prog*" "define-method-combination" "optimize") (#set! priority 110))
 
 ; constant
 ((sym_lit) @constant

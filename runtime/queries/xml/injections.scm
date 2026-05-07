@@ -30,3 +30,11 @@
   (#set! injection.combined)
   (#set! injection.include-children)
   (#set! injection.language "sql"))
+
+; mybatis
+((element
+  (STag
+    (Name) @_name)
+  (content (CharData) @injection.content)
+  (#any-of? @_name "select" "update" "insert")
+  (#set! injection.language "sql")))

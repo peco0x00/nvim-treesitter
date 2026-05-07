@@ -33,12 +33,12 @@
   ] @markup.link
   (#set! conceal ""))
 
-[
+([
   (link_label)
   (link_text)
   (link_title)
   (image_description)
-] @markup.link.label
+] @markup.link.label (#set! priority 110))
 
 ((inline_link
   (link_destination) @_url) @_label

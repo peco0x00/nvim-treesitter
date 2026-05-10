@@ -36,9 +36,10 @@
 ([
   (link_label)
   (link_text)
-  (link_title)
   (image_description)
 ] @markup.link.label (#set! priority 110))
+
+(link_title) @markup.link.title
 
 ((inline_link
   (link_destination) @_url) @_label
